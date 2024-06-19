@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연성문화제</title>
+    <link href="culturecss.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+
+<body>
+    
+    <header>
+        <ul id="header_wrap">
+            <li><button><a href="main.html" class="header_menu_text">문화제 소개</a></button></li>
+            <li><button><a href="culture.html" class="header_menu_text">문화 체험</a></button></li>
+            <li style="overflow: hidden;"><button><a href="index.html" class="header_menu_text" ><img src="img/logo2.png" id="header_logo"></a></button></li>
+            <li><button><a href="information.html" class="header_menu_text">축제 정보</a></button></li>
+            <li><button><a href="guest.html" class="header_menu_text">방명록</a></button></li>
+        </ul>
+    </header>
+
+    <div id="nav">
+        <div class="move">
+            <div class="first">
+                <img id="lef" src="/img/leaf.png">
+                <h1 id="First-h1">집에서 즐기는 연성문화제</h1>
+            </div>
+            <img id="flo" src="img/flower.png">
+            <div class="second">
+                <h1 id="Second-h1">체험부스 소개</h1>
+                <img id="lef2" src="img/leaf.png">
+            </div>
+        </div>
+        </div>
+    
+
+    <section id="banner">
+        <div class="banner_wrap">
+        <h1 style="font-family: 'SangSangRock'; font-weight: normal;" class="bt1">문화 체험</h1>
+        <h5 style="letter-spacing: -1.5px;" class="btt1">연성문화제에서 진행하는 부스들을 확인하고, 집에서 즐길 수 있어요!</h5>
+    </div>
+    </section>
+
+
+    <section class="content" id="conA">
+        <div class="content_wrap">
+            <h2 class="title">집에서 즐기는 연성문화제</h2>
+            <p class="title_text">웹사이트를 통해 관곡지에서 연꽃을 피워보세요!</p>
+        
+            <div class="box">
+                <div style="opacity: 0;; position: absolute; width: 100%; transition: 3s all; z-index: -10;" id="block">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.7.0/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/SOzr9LQyBmJdlYVs/scene.splinecode"></spline-viewer>
+                </div>
+                <div class="box_tag"><img src="img/tag1.png"></div>
+                <button class="start" id="start_button">체험하기</button>
+            </div>
+        
+        </div>
+    </section>
+
+    <section class="content" id="conB">
+        <div class="content_wrap">
+            <h2 class="title">체험부스 소개</h2>
+            <p class="title_text">연성문화제에서 진행하는 체험부스를 확인해보세요!</p>
+
+            <div class="conB_wrap">
+                <div class="Bbutton">
+                    <button onclick="changeContent('전래놀이', '고무줄 놀이, 실뜨기 놀이, 윷놀이, 제기차기, 그네뛰기 등 다양한 한국의 전래놀이에 대해서 알고 경험할 수 있다. 친구, 가족들과 함께 놀이를 즐기며 우리나라의 전통성, 역사성, 고유성에 대해 알아볼 수 있다.', '/img/전래놀이/전래놀이_main.png')">전래놀이</button>
+                    <button onclick="changeContent('약초학교', '일상에서 구할 수 있는 약초들이 우리 몸에 어떻게 좋은지 과학적 근거를 바탕으로 공부할 수 있다. 약초에 대한 지식을 공유하고, 공동체중심의 따뜻한 사회적 가치를 실현하기 위한 약초 활용에 대한 교육이다.', '/img/약초학교/약초학교_main.jpg')">약초학교</button>
+                    <button onclick="changeContent('서예', '서예는 붓으로 글씨를 쓰거나 그 방법을 배우고 익히는 조형예술이다. 한자의 조형적 아름다움을 추구하는 과정에서 서예의 역사가 시작되었다. 고대인의 비석과 묘지, 목판서적의 글씨는 훌륭한 서예 자료이다.', '/img/서예/서예_main.png')">서예</button>
+                    <button onclick="changeContent('활놀이', '한민족의 전통적인 궁술인 국궁에 대해 알아보고 전통 궁술에서 사용하는 활에 대해 알아보고 직접 체험할 수 있다. 활을 쏘아 표적을 맞추어 승부를 겨루는 우리나라의 전통 놀이를 즐길 수 있다.', '/img/활놀이/활놀이_main.jpg')">활놀이</button>
+                </div>
+                <div class="bBimg"></div>
+                <div class="bimg">
+                    <span class="material-symbols-outlined">arrow_back_ios</span>
+                    <img src="/img/서예/서예_1.jpg"> 
+                    <img src="/img/서예/서예_2.jpg"> 
+                    <img src="/img/서예/서예_3.jpg"> 
+                    <img src="/img/서예/서예_4.jpg"> 
+                    <img src="/img/서예/서예_5.jpg"> 
+                    <img src="/img/서예/서예_6.jpg"> 
+                    <span class="material-symbols-outlined">arrow_forward_ios</span>
+                </div>
+                <div class="btext">
+                    <h5>서예</h5>
+                    <p>서예는 붓으로 글씨를 쓰거나 그 방법을 배우고 익히는 조형예술이다. 한자의 조형적 아름다움을 추구하는 과정에서 서예의 역사가 시작되었다. 고대인의 비석과 묘지, 목판서적의 글씨는 훌륭한 서예 자료이다.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div id="footer_top">
+            <ul class="footer_wrap">
+                <li><a href="#">관련 누리집</a></li>
+                <li>|</li>
+                <li><a href="#">시민</a></li>
+                <li>|</li>
+                <li><a href="#">사업자</a></li>
+                <li>|</li>
+                <li><a href="#">관광객</a></li>
+            </ul>
+        </div>
+
+        <div id="footer_bottom">
+        <div class="footer_wrap_B">
+            <div>
+                <img src="logoB.png">
+            </div>
+            <div class="footer_text_wrap">
+                <ul class="ftw">
+                    <li><a href="#" style="color: #7A596D; font-weight: 700;">개인정보처리방침</a></li>
+                    <li>|</li>
+                    <li><a href="#">영상정보처리기기운영방침</a></li>
+                    <li>|</li>
+                    <li><a href="#">저작권정책</a></li>
+                    <li>|</li>
+                    <li><a href="#">누리집 지도</a></li>
+                    <li>|</li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+                <ul class="ftw">
+                    <li><a href="#">(우 429250) 경기 시흥시 관곡지로 139(하중동)</a></li>
+                    <li>|</li>
+                    <li><a href="#">전화 : 031-310-6224</a></li>
+                    <li>|</li>
+                    <li><a href="#">팩스 : 031-310-6200</a></li>
+                </ul>
+                <p style="font-size: 12px; margin-left: 20px;">COPYRIGHT 2024. SIHEUNG CITY&YEONSEONG. All RIGHTS RESERVED.</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>    
+</body>
+</html>

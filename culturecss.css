@@ -1,0 +1,516 @@
+@font-face {
+    font-family: 'SangSangRock';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SangSangRockOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    color: #333333;
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: initial;
+}
+
+body {
+    background-color: #FFFBF2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/**banner**/
+#banner{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/header_fe.png);
+    background-position: 0px 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    gap: 20px;
+}
+
+.banner_wrap{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 8em;
+}
+
+#banner h1{
+    color: #fff;
+    font-size: 5.5em;
+    margin-bottom: 0.2em;
+}
+
+#banner h5{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/** header **/
+
+header{
+    position: fixed;
+    background-color: #00000065;
+    width: 100vw;
+    height: 140px;
+    text-align: center;
+    display: flex;
+    z-index: 99;
+    transition: 0.5s ease-in-out;
+}
+
+.scrolled{
+    border-bottom: 1px solid #8C6697;
+    background-color: #00000045;
+}
+
+#header_wrap{
+    width: 1280px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header_wrap li{
+    width: 180px;
+}
+
+.header_menu_text{
+    font-size: 36px;
+    font-family: 'SangSangRock';
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
+}
+
+.header_menu_text:hover{
+    filter: brightness(40%);
+    
+}
+
+#header_logo{
+    width: 138px;
+    transform: translateY(20%);
+    scale: 1.3;
+    transition: 1s ease-in-out;
+}
+
+
+/**공통사항**/
+
+.content{
+    width: 100vw;
+    
+    margin: 150px 0px;
+}
+
+.content_wrap{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.title{
+    margin-top: 150px;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: 'SangSangRock';
+
+}
+
+.title_text{
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 80px;
+}
+
+/**conA**/
+
+#conA{
+    height: 980px;
+}
+
+.box{
+    width: 100%;
+    height: 520px;
+    background-image: url(img/game.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.box_tag{
+    position: absolute;
+    left: 0%;
+    margin-left: 88px;
+    top: -8px;
+    z-index: 10;
+}
+
+.box_tag img{
+    width: 88px;
+}
+
+.start{
+    padding: 16px 48px;
+    background-color: #ffffff75;
+    border-radius: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    bottom: 0%;
+    position: absolute;
+    margin-bottom: 20px;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+
+.start:hover{
+    background-color: #8C6697;
+    color: #ffffff;
+    box-shadow: 0px 0px 0px 1px #444444;
+}
+
+/**conB**/
+
+.conB_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+}
+
+.Bbutton{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    height: 60px;
+}
+
+.Bbutton button{
+    width: 310px;
+    border: 1px solid #8C6697;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+.Bbutton button:hover{
+    background-color: #8C6697;
+    color: #fff;
+}
+
+.bBimg {
+    width: 100%;
+    height: 464px;
+    background-image: url(img/서예/서예_main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bimg{
+    width: 772px;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bimg span{
+    font-size: 44px;
+    color: #8C6697;
+}
+
+.bimg img{
+    width: 88px;
+    height: 88px;
+    border-radius: 8px;
+}
+
+.btext{
+    width: 772px;
+}
+
+.btext h5{
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+
+
+/**footer**/
+
+footer{
+    margin-top: 200px;
+    width: 100vw;
+    background-color: #C9C9C9;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#footer_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    background-color: #9D9D9D;
+}
+
+.footer_wrap{
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_wrap li{
+    width: 200px;
+}
+
+.footer_wrap a{
+    transition: 0.3s all ease-in-out;
+    font-weight: 600;
+}
+
+.footer_wrap a:hover{
+    padding: 12px 40px;
+    border-radius: 8px;
+    background-color: #cccccc;
+    font-weight: 700;
+}
+
+#footer_bottom{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #C9C9C9;
+}
+
+.footer_wrap_B{
+    width: 1280px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 52px;
+}
+
+.ftw{
+    display: flex;
+    justify-content: start;
+    gap: 0px 12px;
+    margin-left: 20px;
+}
+
+.ftw:nth-child(2){
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+@keyframes title {
+    0%{
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+}
+
+.bt1{
+    animation-name: title;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.btt1{
+    animation-name: title;
+    animation-delay: 2.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+/** nav **/
+
+#nav{
+    position: fixed;
+    margin-left: 40px;
+    z-index: 10;
+    top: 50%;
+    opacity: 0;
+    animation-name: opa;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 5s;
+}
+
+@keyframes opa {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.move {
+    width: 310px;
+    height: 360px;
+    margin: 200px auto;
+    position: relative;
+}
+#lef, #lef2 {
+    width: 157px;
+    height: 96px;
+}
+#lef {
+    transform: rotate(-15deg);
+    cursor: pointer;
+}
+#lef2 {
+    transform: rotate(15deg);
+    cursor: pointer;
+}
+#flo {
+    position: absolute;
+    left: 15px;
+    top: -25px;
+    transform: rotate(-15deg);
+    animation: flo 1.5s;
+    transition: all 1s;
+    z-index: 1;
+}
+#flo.clicked {
+    left: 175px;
+    transform: rotate(15deg);
+    top: 105px;
+}
+.first, .second {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+}
+.first {
+    justify-content: flex-start;
+}
+.second {
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.first h1 {
+    color: #65A86E;
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.7s;
+}
+.first h1.change1 {
+    color: #000000;
+}
+.second h1 {
+    color: #000000;
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.7s;
+}
+.second h1.change2 {
+    color: #65A86E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

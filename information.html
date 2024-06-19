@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연성문화제</title>
+    <link href="informationcss.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+
+<body>
+    
+    <header>
+        <ul id="header_wrap">
+            <li><button><a href="main.html" class="header_menu_text">문화제 소개</a></button></li>
+            <li><button><a href="culture.html" class="header_menu_text">문화 체험</a></button></li>
+            <li style="overflow: hidden;"><button><a href="index.html" class="header_menu_text" ><img src="img/logo2.png" id="header_logo"></a></button></li>
+            <li><button><a href="information.html" class="header_menu_text">축제 정보</a></button></li>
+            <li><button><a href="guest.html" class="header_menu_text">방명록</a></button></li>
+        </ul>
+    </header>
+
+    <div id="nav">
+        <div class="move">
+            <div class="first">
+                <img id="lef" src="/img/leaf.png">
+                <h1 id="First-h1">공연 일정</h1>
+            </div>
+            <img id="flo" src="img/flower.png">
+            <div class="second">
+                <h1 id="Second-h1">전시 일정</h1>
+                <img id="lef2" src="img/leaf.png">
+            </div>
+        </div>
+        </div>
+    
+
+    <section id="banner">
+        <div class="banner_wrap">
+        <h1 style="font-family: 'SangSangRock'; font-weight: normal;" class="bt1">축제 정보</h1>
+        <h5 style="letter-spacing: -1.5px;" class="btt1">연성문화제에서 진행하는 공연과 전시 일정을 확인하실 수 있어요!</h5>
+    </div>
+    </section>
+
+
+    <section class="content" id="conA">
+        <div class="content_wrap">
+            <h2 class="title">공연 일정</h2>
+            
+        <div class="conA_wrap">
+            <div class="conAtitle">
+                <button onclick="changeContent(-1)"><span class="material-symbols-outlined">arrow_back_ios</span></button>
+                <div class="conAtext">
+                    <h4>개막공연</h4>
+                    <p>각종 공연과 행사가 개막되는 흥미진진한 순간을 만나보세요.</p>
+                </div>
+                <button onclick="changeContent(1)"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+            </div>
+            <div class="conAimg">
+                <table>
+                    <tr>
+                        <td><img src="/img/공연/개막공연/개막공연_1.jpg" data-index="1"></td>
+                        <td><img src="/img/공연/개막공연/개막공연_2.jpg" data-index="2"></td>
+                        <td><img src="/img/공연/개막공연/개막공연_3.jpg" data-index="3"></td>
+                        <td><img src="/img/공연/개막공연/개막공연_4.jpg" data-index="4"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/img/공연/개막공연/개막공연_5.jpg" data-index="5"></td>
+                        <td><img src="/img/공연/개막공연/개막공연_6.jpg" data-index="6"></td>
+                        <td><img src="/img/공연/개막공연/개막공연_7.jpg" data-index="7"></td>
+                        <td><img src="/img/공연/개막공연/개막공연_8.jpg" data-index="8"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+
+
+    <section class="content" id="conB">
+        <div class="content_wrap">
+            <h2 class="title">전시 일정</h2>
+        </div>
+        <div class="carousel">
+            <img src="img/전시/전시/전시_1.png" alt="Image 1" onclick="swapImages(0, '본 전시는 두 분야로 진행이 되었으며, 첫 번째는 식(食)，완(玩)，전(戰)으로, 한민족의 식문화, 놀이문화 그리고 무예와 관련된 공예품을 소개하는 전시였고, 두 번째는 매듭공예 기법으로 만든 ▲소품 ▲노리개 ▲악세사리 ▲그림 등의 공예품을 소개하는 전시였다. ')">
+            <img src="img/전시/전시/전시_2.png" alt="Image 2" onclick="swapImages(1, '전통문화(한문화)를 주제로 또는 시흥의 이미지를 선보일 수 있는 다양한 작품 또는 문화상품 전시회를 통하여 한국의 전통문화와 시흥의 이미지를 확고히 하고자 하는 특별전이다.')">
+            <img src="img/전시/전시/전시_3.png" alt="Image 3" onclick="swapImages(2, '전통문화의 소중함과 아름다움을 알리고 미래세대가 계승하는 방식에 대해 기반을 두어 전통문화를 현대적인 시각에서 바라보자는 취지에서 기획된 전시이다. 전통문화를 보존하는 것에 머무르지 않고 현대사회에서 모두가 즐기는 문화가 될 수 있도록 하고자 오늘전통이라는 이름으로 전시가 진행된다.')">
+            <img src="img/전시/전시/전시_4.png" alt="Image 4" onclick="swapImages(3, '시흥시의 역사적 변천 과정과 특징을 볼 수 있는 전시이다. 선사시대부터 근현대까지 변천 과정 기록을 볼 수 있고 주제별 대표적인 지정 문화재와 염전 디오라마 등을 활용하여 관람객들에게 시흥시의 문화를 알려주는 전시이다.')">
+            <img src="img/전시/전시/전시_5.png" alt="Image 5" onclick="swapImages(4, '연꽃테마파크를 주제로 그려 한국화, 서예, 공예 등 작품이 전시되어있다. 한국미술협회 시흥지부 회원들의 작품과 국내 중견 작가의 초대 작품이 있으며 문화 예술 중심 도시로 성장하고 있는 시흥시를 느낄 수 있다.')">
+
+        </div>
+        <p id="inte" style="width: 800px; margin-top: 44px; text-align: center; margin-left: auto; margin-right: auto; line-height: 28px;">본 전시는 두 분야로 진행이 되었으며, 첫 번째는 식(食)，완(玩)，전(戰)으로, 한민족의 식문화, 놀이문화 그리고 무예와 관련된 공예품을 소개하는 전시였고, 두 번째는 매듭공예 기법으로 만든 ▲소품 ▲노리개 ▲악세사리 ▲그림 등의 공예품을 소개하는 전시였다. </p>
+    </section>
+
+    <footer>
+        <div id="footer_top">
+            <ul class="footer_wrap">
+                <li><a href="#">관련 누리집</a></li>
+                <li>|</li>
+                <li><a href="#">시민</a></li>
+                <li>|</li>
+                <li><a href="#">사업자</a></li>
+                <li>|</li>
+                <li><a href="#">관광객</a></li>
+            </ul>
+        </div>
+
+        <div id="footer_bottom">
+        <div class="footer_wrap_B">
+            <div>
+                <img src="logoB.png">
+            </div>
+            <div class="footer_text_wrap">
+                <ul class="ftw">
+                    <li><a href="#" style="color: #7A596D; font-weight: 700;">개인정보처리방침</a></li>
+                    <li>|</li>
+                    <li><a href="#">영상정보처리기기운영방침</a></li>
+                    <li>|</li>
+                    <li><a href="#">저작권정책</a></li>
+                    <li>|</li>
+                    <li><a href="#">누리집 지도</a></li>
+                    <li>|</li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+                <ul class="ftw">
+                    <li><a href="#">(우 429250) 경기 시흥시 관곡지로 139(하중동)</a></li>
+                    <li>|</li>
+                    <li><a href="#">전화 : 031-310-6224</a></li>
+                    <li>|</li>
+                    <li><a href="#">팩스 : 031-310-6200</a></li>
+                </ul>
+                <p style="font-size: 12px; margin-left: 20px;">COPYRIGHT 2024. SIHEUNG CITY&YEONSEONG. All RIGHTS RESERVED.</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <script src="scriptinfo.js"></script>
+</body>
+</html>
